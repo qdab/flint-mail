@@ -1,0 +1,11 @@
+:root { --bg: #101315; --fg: #cacccc; --muted: #888c8e; --accent: #a8adb0; --border: #2b2f31; }
+@media (prefers-color-scheme: light) { :root { --bg: #f6f6f4; --fg: #1b1d1e; --muted: #5c6063; --accent: #3d4448; --border: #dcdcd8; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 "IBM Plex Sans", system-ui, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 64px 20px 80px; }
+h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -0.5px; }
+h2 { font-size: 21px; margin: 36px 0 8px; }
+p, li { color: var(--fg); }
+.lead { color: var(--muted); font-size: 19px; margin: 0 0 32px; }
+a { color: var(--accent); }
+nav { display: flex; gap: 20px; border-top: 1px solid var(--border); margin-top: 48px; padding-top: 20px; color: var(--muted); font-size: 15px; }
